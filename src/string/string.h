@@ -9,5 +9,8 @@
  #include "strisprintable.h"
  #include "strcmp.h"
  #include "strisnum.h"
- 
+ #include "findstr.h"
+ #include "strcapitalize.h"
+ #include "strncpy.h"
+ #include "strncmp.h"
 #endif

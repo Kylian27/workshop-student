@@ -4,6 +4,7 @@ BIN				= ./bin
 ISO				= ./iso
 
 ENTRY			= $(SRC)/entry
+STRING			= $(SRC)/string
 BOOT			= $(SRC)/boot_sector
 LINKER			= $(CONFIG)/linker.ld
 KERNEL_BIN		= $(BIN)/kernel.bin
@@ -35,7 +36,20 @@ LDFLAGS			= -g -relocatable
 
 # Sources
 ASM_SRC			= $(ENTRY)/entry_point.asm
-C_SRC			= $(ENTRY)/kernel_entry.c
+C_SRC			= $(ENTRY)/kernel_entry.c \
+				  $(STRING)/strcat.c \
+				  $(STRING)/strcmp.c \
+				  $(STRING)/strcpy.c \
+				  $(STRING)/strisalpha.c \
+				  $(STRING)/strislower.c \
+				  $(STRING)/strisnum.c \
+				  $(STRING)/strisprintable.c \
+				  $(STRING)/strisupper.c \
+				  $(STRING)/strlen.c \
+				  $(STRING)/findstr.c \
+				  $(STRING)/strcapitalize.c \
+				  $(STRING)/strncmp.c
+
 
 # Objects
 C_OBJ			= $(C_SRC:.c=.o)
