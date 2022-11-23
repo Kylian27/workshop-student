@@ -1,4 +1,4 @@
-int strisupper(char *str)
+int strisupper(char const *str)
 {
     int i = 0;
     int p = 0;
