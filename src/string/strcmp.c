@@ -19,5 +19,13 @@ int strcmp(char const *s1, char const *s2)
     {
         result = len_first - len_second;
     }
-    return result;
+    if (result > 0)
+    {
+        return 1;
+    }
+    else if (result < 0)
+    {
+        return -1;
+    }
+    return 0;
 }

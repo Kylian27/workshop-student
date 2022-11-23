@@ -1,3 +1,7 @@
+/*
+ * find the first occurence of
+ * the needle in the haystack
+*/
 
 #include "strlen.h"
 char *findstr( char *haystack, const char *needle)
@@ -10,5 +14,5 @@ char *findstr( char *haystack, const char *needle)
             return haystack + (i - j);
         }
     }
-    return NULL;
+    return 0;
 }
